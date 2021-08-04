@@ -19,7 +19,7 @@ struct RoundedRectangleImageView: View {
                 Rectangle().cornerRadius(8).foregroundColor(Color(UIColor.lightGray))
             }
             .indicator(.activity)
-            .frame(width: 80, height: 80)
+            .frame(width: 60, height: 60)
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8.0, height: 8.0)))
             .shadow(radius: 5)
             .padding(3)
