@@ -25,17 +25,7 @@ struct StockListView: View {
 struct StockListView_Previews: PreviewProvider {
     
     
-    static var stocks: [StockInfo] {
-        var stocks = [StockInfo]()
-        for i in 0...5 {
-            let tradePrice = Amount(value: 650.00, currency: .usd)
-            let actualChange = Amount(value: 0.00, currency: .usd)
-            let price = PriceInfo(symbol: "TSLA", tradePrice: tradePrice, actualChange: actualChange, percentageChange: 10.00)
-            let stock = StockInfo(name: "TESLA", symbol: "TSLA\(i)", imageURL: nil, priceInfo: price)
-            stocks.append(stock)
-        }
-        return stocks
-    }
+    static var stocks = StockService().stocks
     
     static var previews: some View {
         StockListView(stocks: stocks)
