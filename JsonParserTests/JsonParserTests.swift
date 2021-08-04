@@ -21,7 +21,7 @@ class JsonParserTests: XCTestCase {
     }
 
     func test_StockInfoJsonData_CanParseIntoStockInfoArray() throws {
-        let stocks: [StockInfo] = JsonParser.load("MarketDataApp.json")
+        let stocks: [StockInfo] = JsonParser.load("StockInfoData.json")
         print(stocks)
     }
 
