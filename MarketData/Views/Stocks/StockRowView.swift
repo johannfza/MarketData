@@ -21,6 +21,7 @@ struct StockRowView: View {
                 Text(stock.symbol)
                     .font(.subheadline)
             }
+            .padding(.leading, 5)
             Spacer()
             VStack(alignment: .trailing) {
                 Text(((stock.priceInfo?.tradePrice.getValue() ?? "") as String))
@@ -30,7 +31,7 @@ struct StockRowView: View {
                     .foregroundColor(stock.priceInfo?.actualChange.value ?? 0.00 >= 0.00 ? Color.green : Color.red)
             }
         }
-        .padding()
+        .padding(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5))
     }
 }
 
