@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StockList: View {
+struct StockListView: View {
     
     public var stocks: [StockInfo]
     
@@ -19,13 +19,13 @@ struct StockList: View {
     var body: some View {
         List {
             ForEach(stocks) { stock in
-                StockRow(stock: stock)
+                StockRowView(stock: stock)
             }
         }
     }
 }
 
-struct StockList_Previews: PreviewProvider {
+struct StockListView_Previews: PreviewProvider {
     
     
     static var stocks: [StockInfo] {
@@ -41,6 +41,6 @@ struct StockList_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        StockList(stocks: stocks)
+        StockListView(stocks: stocks)
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StockRow: View {
+struct StockRowView: View {
     
     public var stock: StockInfo
     
@@ -33,7 +33,7 @@ struct StockRow: View {
     }
 }
 
-struct StockRow_Previews: PreviewProvider {
+struct StockRowView_Previews: PreviewProvider {
     
     static let tradePrice = Amount(value: 650.00, currency: .usd)
     static let actualChange = Amount(value: 0.00, currency: .usd)
@@ -42,7 +42,7 @@ struct StockRow_Previews: PreviewProvider {
     
     static var previews: some View {
         List {
-            StockRow(stock: stock)
+            StockRowView(stock: stock)
         }
     }
 }

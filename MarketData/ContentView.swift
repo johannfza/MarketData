@@ -16,7 +16,7 @@ struct ContentView: View {
             Text("Stock List")
                 .padding()
                 .font(.title)
-            StockList(stocks: stockService.stocks)
+            StockListView(stocks: stockService.stocks)
         }
     }
 }
