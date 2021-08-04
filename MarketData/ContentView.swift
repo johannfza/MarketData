@@ -17,7 +17,7 @@ struct ContentView: View {
                 StockListView(stocks: stocks)
                     .navigationTitle("Top Stocks List")
             } else {
-                // TODO
+                // TODO: Add loading view
             }
         }
     }

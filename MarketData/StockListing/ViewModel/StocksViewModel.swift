@@ -25,7 +25,7 @@ final class StocksViewModel: ObservableObject {
             case .success(let stocks):
                 self.stocks = stocks
             case .failure:
-                // TODO:
+                // TODO: Add error handling
                 break
             }
         }
