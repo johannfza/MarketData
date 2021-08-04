@@ -14,6 +14,8 @@ struct StockDetailsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text(stock.name)
+                    .frame(width: .infinity, height: 100, alignment: .topLeading)
                 RoundedRectangleImageView(urlString: stock.imageURL ?? "")
                 Text(stock.symbol)
                     .navigationTitle(stock.symbol)
