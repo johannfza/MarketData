@@ -8,6 +8,4 @@ public struct StockInfo: Identifiable, Codable {
     public var imageURL: String?
     public var priceInfo: PriceInfo?
     
-    
-    
 }
