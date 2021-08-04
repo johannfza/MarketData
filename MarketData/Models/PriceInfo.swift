@@ -1,6 +1,6 @@
 import Foundation
 
-public struct PriceInfo {
+public struct PriceInfo: Codable {
     
     public var symbol: String
     public var tradePrice: Amount

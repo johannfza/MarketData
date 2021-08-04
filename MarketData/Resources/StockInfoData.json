@@ -1,0 +1,362 @@
+[
+    {
+        "name": "Alphabet Inc. - Class A Shares",
+        "symbol": "GOOGL",
+        "imageURL": "https://d3an3cesqmrf1x.cloudfront.net/images/symbols/googl.png",
+        "priceInfo": {
+            "symbol": "GOOGL",
+            "tradePrice": {
+                "value": 2710.31,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 15.779999999999745,
+                "currency": "USD"
+            },
+            "percentageChange": 0.5856308892459815,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Coca-Cola Company, The",
+        "symbol": "KO",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/ko.png",
+        "priceInfo": {
+            "symbol": "KO",
+            "tradePrice": {
+                "value": 57.12,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.0899999999999963,
+                "currency": "USD"
+            },
+            "percentageChange": 0.15781167806417026,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Facebook, Inc.",
+        "symbol": "FB",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/fb.png",
+        "priceInfo": {
+            "symbol": "FB",
+            "tradePrice": {
+                "value": 351.88,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": -4.420000000000016,
+                "currency": "USD"
+            },
+            "percentageChange": -1.2405276452427774,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Apple, Inc.",
+        "symbol": "AAPL",
+        "imageURL": "https://uat-drivewealth.imgix.net/symbols/aapl.png?fit=fillmax&w=125&h=125&bg=FFFFFF",
+        "priceInfo": {
+            "symbol": "AAPL",
+            "tradePrice": {
+                "value": 145.75,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": -0.11000000000001364,
+                "currency": "USD"
+            },
+            "percentageChange": -0.07541478129714359,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Amazon.com Inc.",
+        "symbol": "AMZN",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/amzn.png",
+        "priceInfo": {
+            "symbol": "AMZN",
+            "tradePrice": {
+                "value": 3347.89,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 20.299999999999727,
+                "currency": "USD"
+            },
+            "percentageChange": 0.6100511180764375,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Microsoft Corporation",
+        "symbol": "MSFT",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/msft.png",
+        "priceInfo": {
+            "symbol": "MSFT",
+            "tradePrice": {
+                "value": 285.37,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.45999999999997954,
+                "currency": "USD"
+            },
+            "percentageChange": 0.1614544944017337,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Toyota Motor Corporation",
+        "symbol": "TM",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/tm.png",
+        "priceInfo": {
+            "symbol": "TM",
+            "tradePrice": {
+                "value": 185.69,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 5.849999999999994,
+                "currency": "USD"
+            },
+            "percentageChange": 3.2528914590747298,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Nike, Inc.",
+        "symbol": "NKE",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/nke.png",
+        "priceInfo": {
+            "symbol": "NKE",
+            "tradePrice": {
+                "value": 170,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 2.490000000000009,
+                "currency": "USD"
+            },
+            "percentageChange": 1.4864784191988591,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "General Electric Company",
+        "symbol": "GE",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/ge.png",
+        "priceInfo": {
+            "symbol": "GE",
+            "tradePrice": {
+                "value": 102.25,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": -1.3499999999999943,
+                "currency": "USD"
+            },
+            "percentageChange": -1.3030888030887977,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "AT&T, Inc.",
+        "symbol": "T",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/t.png",
+        "priceInfo": {
+            "symbol": "T",
+            "tradePrice": {
+                "value": 28.18,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.129999999999999,
+                "currency": "USD"
+            },
+            "percentageChange": 0.46345811051693053,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Oracle Corp.",
+        "symbol": "ORCL",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/orcl.png",
+        "priceInfo": {
+            "symbol": "ORCL",
+            "tradePrice": {
+                "value": 89.43,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 2.2900000000000063,
+                "currency": "USD"
+            },
+            "percentageChange": 2.627955014918529,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Cisco Systems, Inc.",
+        "symbol": "CSCO",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/csco.png",
+        "priceInfo": {
+            "symbol": "CSCO",
+            "tradePrice": {
+                "value": 55.83,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.46000000000000085,
+                "currency": "USD"
+            },
+            "percentageChange": 0.8307747877912242,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Walt Disney Company, The",
+        "symbol": "DIS",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/dis.png",
+        "priceInfo": {
+            "symbol": "DIS",
+            "tradePrice": {
+                "value": 177.08,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 1.0600000000000023,
+                "currency": "USD"
+            },
+            "percentageChange": 0.6022042949664823,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Wal-Mart Stores Inc.",
+        "symbol": "WMT",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/wmt.png",
+        "priceInfo": {
+            "symbol": "WMT",
+            "tradePrice": {
+                "value": 143,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.44999999999998863,
+                "currency": "USD"
+            },
+            "percentageChange": 0.3156787092248254,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Verizon Communications Inc.",
+        "symbol": "VZ",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/vz.png",
+        "priceInfo": {
+            "symbol": "VZ",
+            "tradePrice": {
+                "value": 55.88,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.10000000000000142,
+                "currency": "USD"
+            },
+            "percentageChange": 0.1792757260666931,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "McDonald's Corp.",
+        "symbol": "MCD",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/mcd.png",
+        "priceInfo": {
+            "symbol": "MCD",
+            "tradePrice": {
+                "value": 241.5,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": -1.210000000000008,
+                "currency": "USD"
+            },
+            "percentageChange": -0.4985373490997519,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Visa, Inc.",
+        "symbol": "V",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/v.png",
+        "priceInfo": {
+            "symbol": "V",
+            "tradePrice": {
+                "value": 242.56,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": -3.829999999999984,
+                "currency": "USD"
+            },
+            "percentageChange": -1.5544462031738238,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Intel Corporation",
+        "symbol": "INTC",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/intc.png",
+        "priceInfo": {
+            "symbol": "INTC",
+            "tradePrice": {
+                "value": 53.95,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.23000000000000398,
+                "currency": "USD"
+            },
+            "percentageChange": 0.4281459419210797,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "Anheuser-Busch InBev SA/NV",
+        "symbol": "BUD",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/bud.png",
+        "priceInfo": {
+            "symbol": "BUD",
+            "tradePrice": {
+                "value": 63.06,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 0.0800000000000054,
+                "currency": "USD"
+            },
+            "percentageChange": 0.12702445220705844,
+            "status": "ACTIVE"
+        }
+    },
+    {
+        "name": "SAP SE",
+        "symbol": "SAP",
+        "imageURL": "http://syscdn.drivewealth.net/images/symbols/sap.png",
+        "priceInfo": {
+            "symbol": "SAP",
+            "tradePrice": {
+                "value": 146.16,
+                "currency": "USD"
+            },
+            "actualChange": {
+                "value": 2.4399999999999977,
+                "currency": "USD"
+            },
+            "percentageChange": 1.6977456164764804,
+            "status": "ACTIVE"
+        }
+    }
+]
