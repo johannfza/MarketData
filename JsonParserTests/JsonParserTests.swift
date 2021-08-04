@@ -10,23 +10,19 @@ import XCTest
 
 class JsonParserTests: XCTestCase {
     
-    var sut: JsonParser!
-
     override func setUpWithError() throws {
         try super.setUpWithError()
-        sut = JsonParser()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        sut = nil
         try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_StockInfoJsonData_CanParseIntoStockInfoArray() throws {
+        let stocks: [StockInfo] = JsonParser.load("MarketDataApp.json")
+        print(stocks)
     }
 
     func testPerformanceExample() throws {
