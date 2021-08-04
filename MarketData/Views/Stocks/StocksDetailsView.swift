@@ -9,16 +9,21 @@ import SwiftUI
 
 struct StocksDetailsView: View {
     
-    var symbol: String
+    var stock: StockInfoModel
     
     var body: some View {
-        Text(symbol)
-            .navigationTitle(symbol)
+        VStack {
+            RoundedRectangleImageView(urlString: stock.imageURL ?? "")
+            Text(stock.symbol)
+                .navigationTitle(stock.symbol)
+        }
     }
 }
 
 struct StocksDetailsView_Previews: PreviewProvider {
+    
+    
     static var previews: some View {
-        StocksDetailsView(symbol: "TSLA")
+        StocksDetailsView(stock: StocksViewModel().stocks[0])
     }
 }
