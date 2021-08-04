@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MarketDataApp: App {
     
-    @StateObject private var stockService = StockService()
+    @StateObject private var stockService = StocksDataService()
     
     var body: some Scene {
         WindowGroup {
