@@ -12,10 +12,10 @@ struct ContentView: View {
     @EnvironmentObject var stockService: StockService
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Stock List")
-                .padding()
                 .font(.title)
+                .padding()
             StockListView(stocks: stockService.stocks)
         }
     }
