@@ -23,7 +23,6 @@
 		1EEFD59026BAA27600DAA9D5 /* PriceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */; };
 		1EEFD59326BAA2EF00DAA9D5 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */; };
 		1EEFD59526BAA2F800DAA9D5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59426BAA2F800DAA9D5 /* Currency.swift */; };
-		1EEFD59726BAA89300DAA9D5 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59626BAA89300DAA9D5 /* SwiftUIView.swift */; };
 		1EEFD59926BAA8A300DAA9D5 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInfoModel.swift; sourceTree = "<group>"; };
 		1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		1EEFD59426BAA2F800DAA9D5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		1EEFD59626BAA89300DAA9D5 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,14 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E8AE1FD26BAC9B5001C08F4 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1E8AE1FE26BAC9CA001C08F4 /* StocksViewModel.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		1E8AE20026BACA16001C08F4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +103,72 @@
 			path = JsonParserTests;
 			sourceTree = "<group>";
 		};
-		1EA1EAA826BAE3100054089D /* Common */ = {
+		1EA1EAB026BB0B4C0054089D /* StockListing */ = {
+			isa = PBXGroup;
+			children = (
+				1EA1EAB626BB0C2F0054089D /* ViewModel */,
+				1EEFD58726BA9BCB00DAA9D5 /* Views */,
+			);
+			path = StockListing;
+			sourceTree = "<group>";
+		};
+		1EA1EAB226BB0B9A0054089D /* StockDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1EA1EAB526BB0C120054089D /* Views */,
+			);
+			path = StockDetails;
+			sourceTree = "<group>";
+		};
+		1EA1EAB326BB0BAF0054089D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				1EA1EAA926BAE3310054089D /* RoundedRectangleImageView.swift */,
 			);
-			path = Common;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EA1EAB526BB0C120054089D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EA1EAAE26BAF95A0054089D /* StockDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EA1EAB626BB0C2F0054089D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E8AE1FE26BAC9CA001C08F4 /* StocksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EA1EAB726BB0CD30054089D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1EA1EAB926BB0CF90054089D /* Utilities */,
+				1EA1EAB826BB0CDC0054089D /* Stocks */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1EA1EAB826BB0CDC0054089D /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFD58D26BA9E3500DAA9D5 /* StockInfoModel.swift */,
+				1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		1EA1EAB926BB0CF90054089D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */,
+				1EEFD59426BAA2F800DAA9D5 /* Currency.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		1EEFD56C26BA9B3D00DAA9D5 = {
@@ -142,11 +192,11 @@
 		1EEFD57726BA9B3D00DAA9D5 /* MarketData */ = {
 			isa = PBXGroup;
 			children = (
+				1EA1EAB726BB0CD30054089D /* Models */,
+				1EA1EAB226BB0B9A0054089D /* StockDetails */,
+				1EA1EAB026BB0B4C0054089D /* StockListing */,
 				1E8AE20326BACA96001C08F4 /* Resources */,
-				1E8AE1FD26BAC9B5001C08F4 /* Services */,
 				1EEFD59126BAA2DA00DAA9D5 /* Common */,
-				1EEFD58C26BA9E0A00DAA9D5 /* Models */,
-				1EEFD58726BA9BCB00DAA9D5 /* Views */,
 				1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */,
 				1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */,
 				1EEFD57C26BA9B4200DAA9D5 /* Assets.xcassets */,
@@ -167,38 +217,17 @@
 		1EEFD58726BA9BCB00DAA9D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1EA1EAA826BAE3100054089D /* Common */,
-				1EEFD58826BA9BD900DAA9D5 /* Stocks */,
+				1EEFD58926BA9BFC00DAA9D5 /* StockRowView.swift */,
+				1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1EEFD58826BA9BD900DAA9D5 /* Stocks */ = {
-			isa = PBXGroup;
-			children = (
-				1EEFD58926BA9BFC00DAA9D5 /* StockRowView.swift */,
-				1EEFD59626BAA89300DAA9D5 /* SwiftUIView.swift */,
-				1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */,
-				1EA1EAAE26BAF95A0054089D /* StockDetailsView.swift */,
-			);
-			path = Stocks;
-			sourceTree = "<group>";
-		};
-		1EEFD58C26BA9E0A00DAA9D5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1EEFD58D26BA9E3500DAA9D5 /* StockInfoModel.swift */,
-				1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		1EEFD59126BAA2DA00DAA9D5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1EA1EAB326BB0BAF0054089D /* Views */,
 				1E8AE20026BACA16001C08F4 /* Utilities */,
-				1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */,
-				1EEFD59426BAA2F800DAA9D5 /* Currency.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -320,7 +349,6 @@
 				1E8AE20226BACA29001C08F4 /* JsonParser.swift in Sources */,
 				1EEFD59026BAA27600DAA9D5 /* PriceInfoModel.swift in Sources */,
 				1EEFD58A26BA9BFC00DAA9D5 /* StockRowView.swift in Sources */,
-				1EEFD59726BAA89300DAA9D5 /* SwiftUIView.swift in Sources */,
 				1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */,
 				1E8AE1FF26BAC9CA001C08F4 /* StocksViewModel.swift in Sources */,
 				1EA1EAAA26BAE3310054089D /* RoundedRectangleImageView.swift in Sources */,

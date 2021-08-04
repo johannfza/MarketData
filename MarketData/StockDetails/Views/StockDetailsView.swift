@@ -12,14 +12,12 @@ struct StockDetailsView: View {
     var stock: StockInfoModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-                RoundedRectangleImageView(urlString: stock.imageURL ?? "")
-                Text(stock.name)
-                Text(stock.symbol)
-                    .navigationTitle(stock.symbol)
-            }
+        VStack {
+            RoundedRectangleImageView(urlString: stock.imageURL ?? "")
+            Text(stock.name)
+            Text(stock.symbol)
         }
+        .navigationTitle(stock.symbol)
     }
 }
 
