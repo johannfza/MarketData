@@ -11,13 +11,9 @@ struct StockListView: View {
     
     public var stocks: [StockInfo]
     
-    public var stocks121 = [StockInfo]()
-
     var body: some View {
-        List {
-            ForEach(stocks) { stock in
-                StockRowView(stock: stock)
-            }
+        List(stocks) { stock in
+            StockRowView(stock: stock)
         }
     }
 }
