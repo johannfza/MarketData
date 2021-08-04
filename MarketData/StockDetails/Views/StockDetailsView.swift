@@ -22,9 +22,7 @@ struct StockDetailsView: View {
 }
 
 struct StocksDetailsView_Previews: PreviewProvider {
-    
-    
     static var previews: some View {
-        StockDetailsView(stock: StocksViewModel().stocks[0])
+        StockDetailsView(stock: StocksViewModel(stocksService: MockStocksDataService()).stocks[0])
     }
 }

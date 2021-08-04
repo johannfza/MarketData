@@ -21,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(StocksViewModel())
+        ContentView().environmentObject(StocksViewModel(stocksService: MockStocksDataService()))
     }
 }

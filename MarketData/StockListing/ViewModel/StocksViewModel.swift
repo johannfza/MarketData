@@ -10,6 +10,24 @@ import Foundation
 
 final class StocksViewModel: ObservableObject {
     
-    @Published var stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
-
+    private var stocksService: StocksService
+    
+    @Published var stocks = [StockInfoModel]()
+    
+    init(stocksService: StocksService) {
+        self.stocksService = stocksService
+        initStocks()
+    }
+    
+    private func initStocks() {
+        self.stocksService.getTopStocks { result in
+            switch result {
+            case .success(let stocks):
+                self.stocks = stocks
+            case .failure:
+                // TODO:
+                break
+            }
+        }
+    }
 }
