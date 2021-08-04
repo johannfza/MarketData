@@ -13,6 +13,7 @@ struct StocksDetailsView: View {
     
     var body: some View {
         Text(symbol)
+            .navigationTitle(symbol)
     }
 }
 
