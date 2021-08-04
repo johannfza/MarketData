@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var stockService: StockService
+    
     var body: some View {
-        Text("Stock List")
-            .padding()
+        VStack {
+            Text("Stock List")
+                .padding()
+            StockList(stocks: stockService.stocks)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(StockService())
     }
 }
