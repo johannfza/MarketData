@@ -1,6 +1,6 @@
 import Foundation
 
-public struct PriceInfo: Codable {
+public struct PriceInfoModel: Codable {
     
     public var symbol: String
     public var tradePrice: Amount
@@ -16,7 +16,7 @@ public struct PriceInfo: Codable {
             }
         }
         
-        return "\(prefix)\(actualChange.getValue() as String) (\(PriceInfo.valueFormatter.string(from: NSDecimalNumber(decimal: percentageChange)) ?? "")%)"
+        return "\(prefix)\(actualChange.getValue() as String) (\(PriceInfoModel.valueFormatter.string(from: NSDecimalNumber(decimal: percentageChange)) ?? "")%)"
         
     }
     

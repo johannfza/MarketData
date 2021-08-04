@@ -19,8 +19,8 @@
 		1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFD57C26BA9B4200DAA9D5 /* Assets.xcassets */; };
 		1EEFD58026BA9B4200DAA9D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFD57F26BA9B4200DAA9D5 /* Preview Assets.xcassets */; };
 		1EEFD58A26BA9BFC00DAA9D5 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58926BA9BFC00DAA9D5 /* StockRowView.swift */; };
-		1EEFD58E26BA9E3500DAA9D5 /* StockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58D26BA9E3500DAA9D5 /* StockInfo.swift */; };
-		1EEFD59026BAA27600DAA9D5 /* PriceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58F26BAA27600DAA9D5 /* PriceInfo.swift */; };
+		1EEFD58E26BA9E3500DAA9D5 /* StockInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58D26BA9E3500DAA9D5 /* StockInfoModel.swift */; };
+		1EEFD59026BAA27600DAA9D5 /* PriceInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */; };
 		1EEFD59326BAA2EF00DAA9D5 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */; };
 		1EEFD59526BAA2F800DAA9D5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59426BAA2F800DAA9D5 /* Currency.swift */; };
 		1EEFD59726BAA89300DAA9D5 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59626BAA89300DAA9D5 /* SwiftUIView.swift */; };
@@ -53,8 +53,8 @@
 		1EEFD57F26BA9B4200DAA9D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EEFD58126BA9B4200DAA9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EEFD58926BA9BFC00DAA9D5 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
-		1EEFD58D26BA9E3500DAA9D5 /* StockInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfo.swift; sourceTree = "<group>"; };
-		1EEFD58F26BAA27600DAA9D5 /* PriceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInfo.swift; sourceTree = "<group>"; };
+		1EEFD58D26BA9E3500DAA9D5 /* StockInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfoModel.swift; sourceTree = "<group>"; };
+		1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInfoModel.swift; sourceTree = "<group>"; };
 		1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		1EEFD59426BAA2F800DAA9D5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		1EEFD59626BAA89300DAA9D5 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
@@ -187,8 +187,8 @@
 		1EEFD58C26BA9E0A00DAA9D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EEFD58D26BA9E3500DAA9D5 /* StockInfo.swift */,
-				1EEFD58F26BAA27600DAA9D5 /* PriceInfo.swift */,
+				1EEFD58D26BA9E3500DAA9D5 /* StockInfoModel.swift */,
+				1EEFD58F26BAA27600DAA9D5 /* PriceInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,13 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8AE20226BACA29001C08F4 /* JsonParser.swift in Sources */,
-				1EEFD59026BAA27600DAA9D5 /* PriceInfo.swift in Sources */,
+				1EEFD59026BAA27600DAA9D5 /* PriceInfoModel.swift in Sources */,
 				1EEFD58A26BA9BFC00DAA9D5 /* StockRowView.swift in Sources */,
 				1EEFD59726BAA89300DAA9D5 /* SwiftUIView.swift in Sources */,
 				1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */,
 				1E8AE1FF26BAC9CA001C08F4 /* StockService.swift in Sources */,
 				1EA1EAAA26BAE3310054089D /* RoundedRectangleImageView.swift in Sources */,
-				1EEFD58E26BA9E3500DAA9D5 /* StockInfo.swift in Sources */,
+				1EEFD58E26BA9E3500DAA9D5 /* StockInfoModel.swift in Sources */,
 				1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */,
 				1EEFD59926BAA8A300DAA9D5 /* StockListView.swift in Sources */,
 				1EEFD59526BAA2F800DAA9D5 /* Currency.swift in Sources */,
