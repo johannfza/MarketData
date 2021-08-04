@@ -13,7 +13,9 @@ struct StockListView: View {
     
     var body: some View {
         List(stocks) { stock in
-            StockRowView(stock: stock)
+            NavigationLink(destination: StocksDetailsView(symbol: stock.symbol)) {
+                StockRowView(stock: stock)
+            }
         }
     }
 }
