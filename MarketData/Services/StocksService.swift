@@ -8,5 +8,6 @@
 import Foundation
 
 protocol StocksService {
+    
     func getTopStocks(completion: @escaping (Result<[StockInfoModel],Error>) -> Void)
 }

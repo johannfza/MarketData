@@ -12,7 +12,7 @@ final class StocksViewModel: ObservableObject {
     
     private var stocksService: StocksService
     
-    @Published var stocks = [StockInfoModel]()
+    @Published var stocks: [StockInfoModel]?
     
     init(stocksService: StocksService) {
         self.stocksService = stocksService

@@ -13,8 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            StockListView(stocks: stocksViewModel.stocks)
-                .navigationTitle("Top Stocks List")
+            if let stocks = stocksViewModel.stocks {
+                StockListView(stocks: stocks)
+                    .navigationTitle("Top Stocks List")
+            } else {
+                // TODO
+            }
         }
     }
 }

@@ -13,5 +13,4 @@ class MockStocksDataService: StocksService {
         let stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
         completion(.success(stocks))
     }
-    
 }
