@@ -8,7 +8,7 @@
 import Foundation
 
 
-final class StocksDataService: ObservableObject {
+final class StocksViewModel: ObservableObject {
     
     @Published var stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
 

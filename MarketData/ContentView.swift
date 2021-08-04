@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var stockService: StocksDataService
+    @EnvironmentObject var stocksViewModel: StocksViewModel
     
     var body: some View {
         NavigationView {
-            StockListView(stocks: stockService.stocks)
+            StockListView(stocks: stocksViewModel.stocks)
                 .navigationTitle("Top Stocks List")
         }
     }
@@ -21,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(StocksDataService())
+        ContentView().environmentObject(StocksViewModel())
     }
 }
