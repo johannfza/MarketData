@@ -15,6 +15,7 @@ struct ContentView: View {
         VStack {
             Text("Stock List")
                 .padding()
+                .font(.title)
             StockList(stocks: stockService.stocks)
         }
     }
