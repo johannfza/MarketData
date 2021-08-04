@@ -16,7 +16,7 @@ struct StockRowView: View {
         HStack {
             RoundedRectangleImageView(urlString: stock.imageURL ?? "")
             VStack(alignment: .leading) {
-                Text(stock.name ?? "")
+                Text(stock.name)
                     .font(.headline)
                 Text(stock.symbol)
                     .font(.subheadline)
@@ -24,11 +24,11 @@ struct StockRowView: View {
             .padding(.leading, 5)
             Spacer()
             VStack(alignment: .trailing) {
-                Text(((stock.priceInfo?.tradePrice.getValue() ?? "") as String))
+                Text(((stock.priceInfo.tradePrice.getValue()) as String))
                     .font(.headline)
-                Text(stock.priceInfo?.profitAndLossString() ?? "")
+                Text(stock.priceInfo.profitAndLossString())
                     .font(.caption)
-                    .foregroundColor(stock.priceInfo?.actualChange.value ?? 0.00 >= 0.00 ? Color.green : Color.red)
+                    .foregroundColor(stock.priceInfo.actualChange.value >= 0.00 ? Color.green : Color.red)
             }
         }
         .padding(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5))
