@@ -12,11 +12,9 @@ struct ContentView: View {
     @EnvironmentObject var stockService: StockService
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Stock List")
-                .font(.title)
-                .padding()
+        NavigationView {
             StockListView(stocks: stockService.stocks)
+                .navigationTitle("Top Stocks List")
         }
     }
 }
