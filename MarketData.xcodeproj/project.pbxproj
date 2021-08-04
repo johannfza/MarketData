@@ -10,6 +10,7 @@
 		1E8AE1FF26BAC9CA001C08F4 /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8AE1FE26BAC9CA001C08F4 /* StockService.swift */; };
 		1E8AE20226BACA29001C08F4 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8AE20126BACA29001C08F4 /* JsonParser.swift */; };
 		1E8AE20526BACAAB001C08F4 /* StockInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E8AE20426BACAAB001C08F4 /* StockInfoData.json */; };
+		1E8AE22926BACFD7001C08F4 /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8AE22826BACFD7001C08F4 /* JsonParserTests.swift */; };
 		1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */; };
 		1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */; };
 		1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFD57C26BA9B4200DAA9D5 /* Assets.xcassets */; };
@@ -23,10 +24,23 @@
 		1EEFD59926BAA8A300DAA9D5 /* StockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59826BAA8A300DAA9D5 /* StockList.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1E8AE22B26BACFD7001C08F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EEFD56D26BA9B3D00DAA9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEFD57426BA9B3D00DAA9D5;
+			remoteInfo = MarketData;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1E8AE1FE26BAC9CA001C08F4 /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
 		1E8AE20126BACA29001C08F4 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		1E8AE20426BACAAB001C08F4 /* StockInfoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StockInfoData.json; sourceTree = "<group>"; };
+		1E8AE22626BACFD7001C08F4 /* JsonParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8AE22826BACFD7001C08F4 /* JsonParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParserTests.swift; sourceTree = "<group>"; };
+		1E8AE22A26BACFD7001C08F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataApp.swift; sourceTree = "<group>"; };
 		1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E8AE22326BACFD7001C08F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EEFD57226BA9B3D00DAA9D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,10 +98,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		1E8AE22726BACFD7001C08F4 /* JsonParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E8AE22826BACFD7001C08F4 /* JsonParserTests.swift */,
+				1E8AE22A26BACFD7001C08F4 /* Info.plist */,
+			);
+			path = JsonParserTests;
+			sourceTree = "<group>";
+		};
 		1EEFD56C26BA9B3D00DAA9D5 = {
 			isa = PBXGroup;
 			children = (
 				1EEFD57726BA9B3D00DAA9D5 /* MarketData */,
+				1E8AE22726BACFD7001C08F4 /* JsonParserTests */,
 				1EEFD57626BA9B3D00DAA9D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */,
+				1E8AE22626BACFD7001C08F4 /* JsonParserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +190,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E8AE22526BACFD7001C08F4 /* JsonParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8AE22F26BACFD7001C08F4 /* Build configuration list for PBXNativeTarget "JsonParserTests" */;
+			buildPhases = (
+				1E8AE22226BACFD7001C08F4 /* Sources */,
+				1E8AE22326BACFD7001C08F4 /* Frameworks */,
+				1E8AE22426BACFD7001C08F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E8AE22C26BACFD7001C08F4 /* PBXTargetDependency */,
+			);
+			name = JsonParserTests;
+			productName = JsonParserTests;
+			productReference = 1E8AE22626BACFD7001C08F4 /* JsonParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1EEFD57426BA9B3D00DAA9D5 /* MarketData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EEFD58426BA9B4200DAA9D5 /* Build configuration list for PBXNativeTarget "MarketData" */;
@@ -184,6 +234,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					1E8AE22526BACFD7001C08F4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1EEFD57426BA9B3D00DAA9D5;
+					};
 					1EEFD57426BA9B3D00DAA9D5 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -203,11 +257,19 @@
 			projectRoot = "";
 			targets = (
 				1EEFD57426BA9B3D00DAA9D5 /* MarketData */,
+				1E8AE22526BACFD7001C08F4 /* JsonParserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E8AE22426BACFD7001C08F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EEFD57326BA9B3D00DAA9D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +283,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E8AE22226BACFD7001C08F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8AE22926BACFD7001C08F4 /* JsonParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EEFD57126BA9B3D00DAA9D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,7 +311,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1E8AE22C26BACFD7001C08F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEFD57426BA9B3D00DAA9D5 /* MarketData */;
+			targetProxy = 1E8AE22B26BACFD7001C08F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1E8AE22D26BACFD7001C08F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33GXC7VWW4;
+				INFOPLIST_FILE = JsonParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johann.JsonParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketData.app/MarketData";
+			};
+			name = Debug;
+		};
+		1E8AE22E26BACFD7001C08F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33GXC7VWW4;
+				INFOPLIST_FILE = JsonParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johann.JsonParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketData.app/MarketData";
+			};
+			name = Release;
+		};
 		1EEFD58226BA9B4200DAA9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -405,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E8AE22F26BACFD7001C08F4 /* Build configuration list for PBXNativeTarget "JsonParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E8AE22D26BACFD7001C08F4 /* Debug */,
+				1E8AE22E26BACFD7001C08F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1EEFD57026BA9B3D00DAA9D5 /* Build configuration list for PBXProject "MarketData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
