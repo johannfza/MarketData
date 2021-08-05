@@ -11,6 +11,7 @@ class StockListViewModel: ObservableObject {
         
     private var stockListService: StockListService
     
+    @Published var stockListError: StockListError?
     @Published var stocks: [StockInfoModel]?
     
     init(stockListService: StockListService) {
@@ -23,7 +24,8 @@ class StockListViewModel: ObservableObject {
             switch result {
             case .success(let stocks):
                 self.stocks = stocks
-            default:
+            case .failure(let error):
+                self.stockListError = error
                 break
             }
         }
