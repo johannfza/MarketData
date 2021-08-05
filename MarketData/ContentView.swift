@@ -13,12 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            if let stocks = vm.stocks {
+            if let error = vm.stockListError {
+                Text(error.message)
+            } else if let stocks = vm.stocks {
                 StockListView(stocks: stocks)
                     .navigationTitle("Stock List")
             } else {
-                // TODO:
-                Text("No Stocks")
+                ProgressView()
             }
         }
     }
