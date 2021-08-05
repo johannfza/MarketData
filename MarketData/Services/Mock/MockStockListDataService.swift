@@ -7,8 +7,8 @@
 
 import Foundation
 
-class MockStockListDataService: StockListService {
-    func getTopStocks(completion: @escaping (Result<[StockInfoModel], Error>) -> Void) {
+class MockStockListDataService: StockListService {    
+    func getTopStocks(completion: @escaping (Result<[StockInfoModel], StockListError>) -> Void) {
         mockDelay {
             let stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
             completion(.success(stocks))
