@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MarketDataApp: App {
     
-    @StateObject var vm = StockListViewModel(stockListService: MockStockListDataService())
+    @StateObject var vm = StockListViewModel(stockListService: StockListDataService())
     
     var body: some Scene {
         WindowGroup {
