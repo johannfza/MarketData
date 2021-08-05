@@ -7,10 +7,9 @@
 
 import Foundation
 
-class StockListService {
-    
-    func getTopStocks() -> [StockInfoModel] {
-        return JsonParser.load("StockInfoData.json")
-    }
-    
+
+protocol StockListService {
+    func getTopStocks(completion: @escaping (Result<[StockInfoModel], Error>) -> Void )
 }
+
+

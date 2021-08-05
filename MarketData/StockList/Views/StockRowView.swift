@@ -38,7 +38,7 @@ struct StockRow_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            if let stock = StockListViewModel(stockListService: StockListService()).stocks?[0] {
+            if let stock = StockListViewModel(stockListService: MockStockListDataService()).stocks?[0] {
                 StockRowView(stock: stock)
             }
         }

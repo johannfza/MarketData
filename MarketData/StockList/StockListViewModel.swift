@@ -13,13 +13,19 @@ class StockListViewModel: ObservableObject {
     
     @Published var stocks: [StockInfoModel]?
     
-    
     init(stockListService: StockListService) {
         self.stockListService = stockListService
         initStocks()
     }
 
     private func initStocks() {
-        stocks = self.stockListService.getTopStocks()
+        stockListService.getTopStocks { result in
+            switch result {
+            case .success(let stocks):
+                self.stocks = stocks
+            default:
+                break
+            }
+        }
     }
 }
