@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Amount {
+public struct Amount: Codable {
     
     var value: Decimal
     var currency: Currency
