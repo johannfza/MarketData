@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MarketDataApp: App {
+    
+    @StateObject var vm = StockListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(vm)
         }
     }
 }
