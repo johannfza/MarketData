@@ -8,7 +8,18 @@
 import Foundation
 
 class StockListViewModel: ObservableObject {
+        
+    private var stockListService: StockListService
     
-    @Published var stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
+    @Published var stocks: [StockInfoModel]?
     
+    
+    init(stockListService: StockListService) {
+        self.stockListService = stockListService
+        initStocks()
+    }
+
+    private func initStocks() {
+        stocks = self.stockListService.getTopStocks()
+    }
 }

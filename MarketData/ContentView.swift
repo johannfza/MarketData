@@ -13,8 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            StockListView(stocks: vm.stocks)
-                .navigationTitle("Stock List")
+            if let stocks = vm.stocks {
+                StockListView(stocks: stocks)
+                    .navigationTitle("Stock List")
+            } else {
+                // TODO:
+                Text("No Stocks")
+            }
         }
     }
 }
@@ -22,6 +27,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
-        ContentView().environmentObject(StockListViewModel())
+        ContentView().environmentObject(StockListViewModel(stockListService: StockListService()))
     }
 }

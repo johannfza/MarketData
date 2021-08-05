@@ -11,8 +11,6 @@ struct StockListView: View {
     
     public var stocks: [StockInfoModel]
     
-//    public var stocksArray: [StockInfo] = [StockInfo(sadassaddaasdad)]
-    
     var body: some View {
         List(stocks) { stock in
             NavigationLink(destination: StockDetailsView(stock: stock)) {
@@ -24,6 +22,9 @@ struct StockListView: View {
 
 struct StockList_Previews: PreviewProvider {
     static var previews: some View {
-        StockListView(stocks: StockListViewModel().stocks)
+        
+        if let stocks = StockListViewModel(stockListService: StockListService()).stocks {
+            StockListView(stocks: stocks)
+        }
     }
 }

@@ -38,7 +38,9 @@ struct StockRow_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            StockRowView(stock: StockListViewModel().stocks[0])
+            if let stock = StockListViewModel(stockListService: StockListService()).stocks?[0] {
+                StockRowView(stock: stock)
+            }
         }
         .previewLayout(.fixed(width: 450, height: 100))
     }
