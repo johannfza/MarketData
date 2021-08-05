@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            StockList(stocks: vm.stocks)
+            StockListView(stocks: vm.stocks)
                 .navigationTitle("Stock List")
         }
     }

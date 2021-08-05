@@ -1,6 +1,6 @@
 import Foundation
 
-public struct StockInfo: Identifiable, Codable {
+public struct StockInfoModel: Identifiable, Codable {
     
     public var id: String { symbol }
     public var name: String
