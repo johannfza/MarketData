@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E044D5626BB97E90050A8B7 /* StockInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E044D5526BB97E90050A8B7 /* StockInfoData.json */; };
 		1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */; };
 		1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */; };
 		1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFD57C26BA9B4200DAA9D5 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E044D5526BB97E90050A8B7 /* StockInfoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StockInfoData.json; sourceTree = "<group>"; };
 		1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataApp.swift; sourceTree = "<group>"; };
 		1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E044D5426BB971B0050A8B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E044D5526BB97E90050A8B7 /* StockInfoData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1EEFD56C26BA9B3D00DAA9D5 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		1EEFD57726BA9B3D00DAA9D5 /* MarketData */ = {
 			isa = PBXGroup;
 			children = (
+				1E044D5426BB971B0050A8B7 /* Resources */,
 				1EEFD59126BAA2DA00DAA9D5 /* Common */,
 				1EEFD58C26BA9E0A00DAA9D5 /* Models */,
 				1EEFD58726BA9BCB00DAA9D5 /* Views */,
@@ -179,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E044D5626BB97E90050A8B7 /* StockInfoData.json in Resources */,
 				1EEFD58026BA9B4200DAA9D5 /* Preview Assets.xcassets in Resources */,
 				1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */,
 			);
