@@ -18,8 +18,6 @@ struct ContentView: View {
                     .navigationTitle("Stock List")
             } else {
                 ProgressView()
-                // TODO:
-//                Text("No Stocks")
             }
         }
     }
