@@ -26,14 +26,48 @@ class StockListDataServiceTests: XCTestCase {
     }
     
     func test_getTopStocks_getsTopStocks() throws {
+        let expectation = self.expectation(description: "API Call Completed")
+        
+        var topStocks: [StockInfoModel]? = nil // No top stocks
+        
         sut.getTopStocks { result in
             switch result {
             case .success(let stocks):
-                XCTAssertEqual(stocks.count, 20)
-            default:
+                topStocks = stocks
+                print("Here")
+            case .failure(let error): // StockListServiceError
+                print(error.message)
                 break
             }
+            expectation.fulfill()
         }
+//        wait(for: [expectation], timeout: 5)
+        waitForExpectations(timeout: 10, handler: nil) // wait for max 10 sec
+        
+        XCTAssertTrue(topStocks != nil) // Check if has top stocks
+    }
+    
+    func test_getTopStocksWithErrorProtocol_printErrorMessage() throws {
+        let expectation = self.expectation(description: "API Call Completed")
+        
+        var topStocks: [StockInfoModel]? = nil // No top stocks
+        
+        sut.getTopStocksWithErrorProtocol { result in
+            switch result {
+            case .success(let stocks):
+                topStocks = stocks
+                print("Here")
+            case .failure(let error):
+                print(error.localizedDescription)
+                print(error.message)
+                break
+            }
+            expectation.fulfill()
+        }
+//        wait(for: [expectation], timeout: 5)
+        waitForExpectations(timeout: 10, handler: nil) // wait for max 10 sec
+        
+        XCTAssertTrue(topStocks != nil) // Check if has top stocks
     }
     
     func testPerformanceExample() throws {

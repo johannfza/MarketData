@@ -22,7 +22,9 @@ class StockListViewModel: ObservableObject {
         stockListService.getTopStocks { result in
             switch result {
             case .success(let stocks):
-                self.stocks = stocks
+                DispatchQueue.main.async {
+                    self.stocks = stocks
+                }
             default:
                 break
             }
