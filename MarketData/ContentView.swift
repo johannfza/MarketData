@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @EnvironmentObject var vm: StockListViewModel
-    
+        
     var body: some View {
         NavigationView {
-            if let stocks = vm.stocks {
-                StockListView(stocks: stocks)
-                    .navigationTitle("Stock List")
-            } else {
-                ProgressView()
-            }
+            StockListView()
+                .navigationTitle("Top Stocks")
         }
     }
 }
