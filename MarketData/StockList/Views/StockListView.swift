@@ -24,11 +24,8 @@ struct StockListView: View {
     }
 }
 
-struct StockList_Previews: PreviewProvider {
+struct StockList_Prevsiews: PreviewProvider {
     static var previews: some View {
-        
-        if let stocks = StockListViewModel(stockListService: MockStockListDataService()).stocks {
-            StockListView()
-        }
+        StockListView()
     }
 }
