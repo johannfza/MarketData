@@ -8,27 +8,24 @@
 import XCTest
 @testable import MarketData
 
-class MarketDataTests: XCTestCase {
+class StockListDataServiceTests: XCTestCase {
     
 //    test_operation_withCertainInputs_shouldDoSomething()
 //    test_getPeople_inNormalCases_shouldGetPeople()
     
+    var sut: StockListDataService!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        sut = StockListDataService()
     }
     
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        try super.tearDownWithError()
     }
     
-    func test_StockInfoJsonData_CanParseIntoStockInfoArray() throws {
-        let stocks: [StockInfoModel] = JsonParser.load("StockInfoData.json")
-        XCTAssertEqual(stocks.count, 20)
-    }
-    
-    func test_MockStockListDataService_getTopStocksSuccess() throws {
-        let sut = MockStockListDataService()
-        
+    func test_getTopStocks_getsTopStocks() throws {
         sut.getTopStocks { result in
             switch result {
             case .success(let stocks):
@@ -45,5 +42,6 @@ class MarketDataTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
     
 }

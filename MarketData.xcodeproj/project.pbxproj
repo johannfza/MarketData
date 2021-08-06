@@ -16,6 +16,8 @@
 		1E71DB4326BBCD86005E2B27 /* MockStockListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4226BBCD86005E2B27 /* MockStockListDataService.swift */; };
 		1E71DB4526BBDD55005E2B27 /* StockListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4426BBDD55005E2B27 /* StockListService.swift */; };
 		1E71DB4F26BBE66F005E2B27 /* MockDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4E26BBE66F005E2B27 /* MockDelay.swift */; };
+		1E7DCE2026BD160A00AAF8B0 /* StockListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DCE1F26BD160A00AAF8B0 /* StockListDataService.swift */; };
+		1E7DCE2226BD178700AAF8B0 /* StockListDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */; };
 		1EBD122B26BBB7D6008ED4FF /* RoundedRectangleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD122A26BBB7D6008ED4FF /* RoundedRectangleImageView.swift */; };
 		1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */; };
 		1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */; };
@@ -50,6 +52,8 @@
 		1E71DB4226BBCD86005E2B27 /* MockStockListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockListDataService.swift; sourceTree = "<group>"; };
 		1E71DB4426BBDD55005E2B27 /* StockListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListService.swift; sourceTree = "<group>"; };
 		1E71DB4E26BBE66F005E2B27 /* MockDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDelay.swift; sourceTree = "<group>"; };
+		1E7DCE1F26BD160A00AAF8B0 /* StockListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataService.swift; sourceTree = "<group>"; };
+		1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataServiceTests.swift; sourceTree = "<group>"; };
 		1EBD122A26BBB7D6008ED4FF /* RoundedRectangleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleImageView.swift; sourceTree = "<group>"; };
 		1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataApp.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			children = (
 				1E044D5D26BB9CD80050A8B7 /* MarketDataTests.swift */,
 				1E044D5F26BB9CD80050A8B7 /* Info.plist */,
+				1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */,
 			);
 			path = MarketDataTests;
 			sourceTree = "<group>";
@@ -164,8 +169,7 @@
 		1E71DB4126BBCD54005E2B27 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1E71DB4C26BBE65D005E2B27 /* Mock */,
-				1E71DB4426BBDD55005E2B27 /* StockListService.swift */,
+				1E7DCE1E26BD15CB00AAF8B0 /* StockListServices */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,6 +189,16 @@
 				1E71DB4E26BBE66F005E2B27 /* MockDelay.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1E7DCE1E26BD15CB00AAF8B0 /* StockListServices */ = {
+			isa = PBXGroup;
+			children = (
+				1E71DB4426BBDD55005E2B27 /* StockListService.swift */,
+				1E71DB4C26BBE65D005E2B27 /* Mock */,
+				1E7DCE1F26BD160A00AAF8B0 /* StockListDataService.swift */,
+			);
+			path = StockListServices;
 			sourceTree = "<group>";
 		};
 		1EBD122726BBB7B0008ED4FF /* Views */ = {
@@ -363,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7DCE2226BD178700AAF8B0 /* StockListDataServiceTests.swift in Sources */,
 				1E044D5E26BB9CD80050A8B7 /* MarketDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +391,7 @@
 				1E71DB4526BBDD55005E2B27 /* StockListService.swift in Sources */,
 				1EEFD58A26BA9BFC00DAA9D5 /* StockRowView.swift in Sources */,
 				1E71DB4026BBC283005E2B27 /* StockDetailsView.swift in Sources */,
+				1E7DCE2026BD160A00AAF8B0 /* StockListDataService.swift in Sources */,
 				1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */,
 				1EEFD58E26BA9E3500DAA9D5 /* StockInfoModel.swift in Sources */,
 				1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */,
