@@ -17,10 +17,9 @@
 		1E2DE4BD26BF99F700D49572 /* ChartDataRsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4BC26BF99F700D49572 /* ChartDataRsDTO.swift */; };
 		1E2DE4C426BF9F0D00D49572 /* JsonDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C326BF9F0D00D49572 /* JsonDataTests.swift */; };
 		1E2DE4C626BFA17C00D49572 /* DayChartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C526BFA17C00D49572 /* DayChartData.json */; };
-		1E2DE4C826BFA28A00D49572 /* ChartDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C726BFA28A00D49572 /* ChartDataPoint.swift */; };
+		1E2DE4C826BFA28A00D49572 /* StockPriceDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */; };
 		1E2DE4CB26BFA90500D49572 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DE4CA26BFA90500D49572 /* Charts */; };
-		1E2DE4CD26BFA90500D49572 /* ChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DE4CC26BFA90500D49572 /* ChartsDynamic */; };
-		1E2DE4CE26BFA90500D49572 /* ChartsDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DE4CC26BFA90500D49572 /* ChartsDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1E2DE4D326BFAAEC00D49572 /* StockPriceLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */; };
 		1E71DB4026BBC283005E2B27 /* StockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */; };
 		1E71DB4326BBCD86005E2B27 /* MockStockListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4226BBCD86005E2B27 /* MockStockListDataService.swift */; };
 		1E71DB4526BBDD55005E2B27 /* StockListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4426BBDD55005E2B27 /* StockListService.swift */; };
@@ -58,7 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E2DE4CE26BFA90500D49572 /* ChartsDynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +75,8 @@
 		1E2DE4BC26BF99F700D49572 /* ChartDataRsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataRsDTO.swift; sourceTree = "<group>"; };
 		1E2DE4C326BF9F0D00D49572 /* JsonDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataTests.swift; sourceTree = "<group>"; };
 		1E2DE4C526BFA17C00D49572 /* DayChartData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DayChartData.json; sourceTree = "<group>"; };
-		1E2DE4C726BFA28A00D49572 /* ChartDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataPoint.swift; sourceTree = "<group>"; };
+		1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceDataPoint.swift; sourceTree = "<group>"; };
+		1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceLineChartView.swift; sourceTree = "<group>"; };
 		1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsView.swift; sourceTree = "<group>"; };
 		1E71DB4226BBCD86005E2B27 /* MockStockListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockListDataService.swift; sourceTree = "<group>"; };
 		1E71DB4426BBDD55005E2B27 /* StockListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListService.swift; sourceTree = "<group>"; };
@@ -112,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E2DE4CD26BFA90500D49572 /* ChartsDynamic in Frameworks */,
 				1E044D6F26BBB5D30050A8B7 /* SDWebImageSwiftUI in Frameworks */,
 				1E2DE4CB26BFA90500D49572 /* Charts in Frameworks */,
 			);
@@ -181,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2DE4BA26BF98E100D49572 /* ChartType.swift */,
-				1E2DE4C726BFA28A00D49572 /* ChartDataPoint.swift */,
+				1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -201,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */,
+				1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,7 +356,6 @@
 			packageProductDependencies = (
 				1E044D6E26BBB5D30050A8B7 /* SDWebImageSwiftUI */,
 				1E2DE4CA26BFA90500D49572 /* Charts */,
-				1E2DE4CC26BFA90500D49572 /* ChartsDynamic */,
 			);
 			productName = MarketData;
 			productReference = 1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */;
@@ -442,6 +440,7 @@
 			files = (
 				1E2DE4BB26BF98E100D49572 /* ChartType.swift in Sources */,
 				1E2DE4B826BF989B00D49572 /* StockDetailsViewModel.swift in Sources */,
+				1E2DE4D326BFAAEC00D49572 /* StockPriceLineChartView.swift in Sources */,
 				1E71DB4326BBCD86005E2B27 /* MockStockListDataService.swift in Sources */,
 				1EEFD59026BAA27600DAA9D5 /* PriceInfo.swift in Sources */,
 				1E71DB4526BBDD55005E2B27 /* StockListService.swift in Sources */,
@@ -455,7 +454,7 @@
 				1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */,
 				1EBD122B26BBB7D6008ED4FF /* RoundedRectangleImageView.swift in Sources */,
 				1E044D6826BB9D160050A8B7 /* JsonParser.swift in Sources */,
-				1E2DE4C826BFA28A00D49572 /* ChartDataPoint.swift in Sources */,
+				1E2DE4C826BFA28A00D49572 /* StockPriceDataPoint.swift in Sources */,
 				1EEFD59926BAA8A300DAA9D5 /* StockListView.swift in Sources */,
 				1EEFD59526BAA2F800DAA9D5 /* Currency.swift in Sources */,
 				1EEFD59326BAA2EF00DAA9D5 /* Amount.swift in Sources */,
@@ -514,6 +513,110 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketData.app/MarketData";
 			};
 			name = Release;
+		};
+		1E2DE4D426BFB9C600D49572 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Mock;
+		};
+		1E2DE4D526BFB9C600D49572 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MarketData/Preview Content\"";
+				DEVELOPMENT_TEAM = 33GXC7VWW4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MarketData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DMOCK";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johann.MarketData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Mock;
+		};
+		1E2DE4D626BFB9C600D49572 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33GXC7VWW4;
+				INFOPLIST_FILE = MarketDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johann.MarketDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketData.app/MarketData";
+			};
+			name = Mock;
 		};
 		1EEFD58226BA9B4200DAA9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -646,6 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johann.MarketData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -668,6 +772,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.johann.MarketData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -682,6 +787,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E044D6326BB9CD80050A8B7 /* Debug */,
+				1E2DE4D626BFB9C600D49572 /* Mock */,
 				1E044D6426BB9CD80050A8B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -691,6 +797,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1EEFD58226BA9B4200DAA9D5 /* Debug */,
+				1E2DE4D426BFB9C600D49572 /* Mock */,
 				1EEFD58326BA9B4200DAA9D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -700,6 +807,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1EEFD58526BA9B4200DAA9D5 /* Debug */,
+				1E2DE4D526BFB9C600D49572 /* Mock */,
 				1EEFD58626BA9B4200DAA9D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -736,11 +844,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1E2DE4C926BFA90500D49572 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
-		};
-		1E2DE4CC26BFA90500D49572 /* ChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E2DE4C926BFA90500D49572 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = ChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

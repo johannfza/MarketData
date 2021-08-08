@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChartDataPoint {
+struct StockPriceDataPoint {
     
     var timerstamp: String
     var open: Double

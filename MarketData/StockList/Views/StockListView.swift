@@ -9,7 +9,11 @@ import SwiftUI
 
 struct StockListView: View {
     
+    #if MOCK
+    @StateObject var vm = StockListViewModel(stockListService: MockStockListDataService())
+    #else
     @StateObject var vm = StockListViewModel(stockListService: StockListDataService())
+    #endif
 
     var body: some View {
         if let stocks = vm.stocks {
