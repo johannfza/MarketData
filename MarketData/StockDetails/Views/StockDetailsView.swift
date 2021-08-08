@@ -9,18 +9,32 @@ import SwiftUI
 
 struct StockDetailsView: View {
     
+    @StateObject var vm: StockDetailsViewModel
+    
     public var stock: StockInfoModel
+    
+    @State var selectedChartType: POCChartType = .day1min
+    
+    init(stock: StockInfoModel) {
+        self.stock = stock
+        _vm = StateObject(wrappedValue: StockDetailsViewModel(stock: stock))
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
+            HStack(alignment: .top)  {
                 Text(stock.name)
                 Spacer()
                 RoundedRectangleImageView(urlString: stock.imageURL ?? "")
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-            .navigationTitle(stock.symbol)
+            .padding()
+            
+            StockPriceLineChartView(vm: vm)
+                .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 400, idealHeight: 400, maxHeight: 400, alignment: .center)
+            ChartTypeSelectorView(type: $vm.selectedChartType)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+        .navigationTitle(stock.symbol)
     }
 }
 

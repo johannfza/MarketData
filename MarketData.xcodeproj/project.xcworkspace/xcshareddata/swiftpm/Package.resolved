@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Charts",
-        "repositoryURL": "https://github.com/RedAirship/Charts.git",
+        "repositoryURL": "https://github.com/RedAirship/Charts",
         "state": {
           "branch": null,
           "revision": "8d134a78bb2cb9e7a0f05ecbd5880bb05cd02863",

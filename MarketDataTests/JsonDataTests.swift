@@ -25,17 +25,25 @@ class JsonDataTests: XCTestCase {
     
     func test_dayChartDataJson_CanParseDataIntoChartDataRsDTO() throws {
         var chartDataRsDTO: ChartDataRsDTO? = nil
-        chartDataRsDTO = JsonParser.load("DayChartData.json")
+        chartDataRsDTO = JsonParser.load("Day1minChart.json")
         XCTAssert(chartDataRsDTO?.compression == 1)
         XCTAssertNotNil(chartDataRsDTO)
     }
     
-    func test_parseChartDataString_intoPriceDataArray() throws {
+    func test_parseDayOneMinChartDataString_intoPriceDataArray() throws {
         var chartDataRsDTO: ChartDataRsDTO? = nil
-        chartDataRsDTO = JsonParser.load("DayChartData.json")
+        chartDataRsDTO = JsonParser.load("Day1minChart.json")
         XCTAssert(chartDataRsDTO?.compression == 1)
         XCTAssertNotNil(chartDataRsDTO)
-        XCTAssertEqual(chartDataRsDTO?.chartDataPoints.count, 390)
+        XCTAssertEqual(chartDataRsDTO?.stockPriceDataPoints.count, 390) // 390
+    }
+    
+    func test_parseDayFiveMinChartDataString_intoPriceDataArray() throws {
+        var chartDataRsDTO: ChartDataRsDTO? = nil
+        chartDataRsDTO = JsonParser.load("Day5minChart.json")
+        XCTAssert(chartDataRsDTO?.compression == 4)
+        XCTAssertNotNil(chartDataRsDTO)
+        XCTAssertEqual(chartDataRsDTO?.stockPriceDataPoints.count, 78) //
     }
     
     func testPerformanceExample() throws {

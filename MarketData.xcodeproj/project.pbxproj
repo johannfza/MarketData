@@ -13,12 +13,11 @@
 		1E044D6C26BBA2410050A8B7 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E044D6B26BBA2410050A8B7 /* StockListViewModel.swift */; };
 		1E044D6F26BBB5D30050A8B7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1E044D6E26BBB5D30050A8B7 /* SDWebImageSwiftUI */; };
 		1E2DE4B826BF989B00D49572 /* StockDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4B726BF989B00D49572 /* StockDetailsViewModel.swift */; };
-		1E2DE4BB26BF98E100D49572 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4BA26BF98E100D49572 /* ChartType.swift */; };
+		1E2DE4BB26BF98E100D49572 /* POCChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4BA26BF98E100D49572 /* POCChartType.swift */; };
 		1E2DE4BD26BF99F700D49572 /* ChartDataRsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4BC26BF99F700D49572 /* ChartDataRsDTO.swift */; };
 		1E2DE4C426BF9F0D00D49572 /* JsonDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C326BF9F0D00D49572 /* JsonDataTests.swift */; };
-		1E2DE4C626BFA17C00D49572 /* DayChartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C526BFA17C00D49572 /* DayChartData.json */; };
+		1E2DE4C626BFA17C00D49572 /* Day1minChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C526BFA17C00D49572 /* Day1minChart.json */; };
 		1E2DE4C826BFA28A00D49572 /* StockPriceDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */; };
-		1E2DE4CB26BFA90500D49572 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1E2DE4CA26BFA90500D49572 /* Charts */; };
 		1E2DE4D326BFAAEC00D49572 /* StockPriceLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */; };
 		1E71DB4026BBC283005E2B27 /* StockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */; };
 		1E71DB4326BBCD86005E2B27 /* MockStockListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71DB4226BBCD86005E2B27 /* MockStockListDataService.swift */; };
@@ -28,6 +27,8 @@
 		1E7DCE2226BD178700AAF8B0 /* StockListDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */; };
 		1E7DCE2426BD27F400AAF8B0 /* StockListServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7DCE2326BD27F400AAF8B0 /* StockListServiceError.swift */; };
 		1EBD122B26BBB7D6008ED4FF /* RoundedRectangleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD122A26BBB7D6008ED4FF /* RoundedRectangleImageView.swift */; };
+		1EDA6CAE26BFC58400EAE128 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1EDA6CAD26BFC58400EAE128 /* Charts */; };
+		1EDA6CB226BFD41300EAE128 /* ChartTypeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA6CB126BFD41300EAE128 /* ChartTypeSelectorView.swift */; };
 		1EEFD57926BA9B3D00DAA9D5 /* MarketDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */; };
 		1EEFD57B26BA9B3D00DAA9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */; };
 		1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEFD57C26BA9B4200DAA9D5 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 		1EEFD59326BAA2EF00DAA9D5 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */; };
 		1EEFD59526BAA2F800DAA9D5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59426BAA2F800DAA9D5 /* Currency.swift */; };
 		1EEFD59926BAA8A300DAA9D5 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */; };
+		1EF37EF526BFEA77003489F0 /* Day5minChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EF426BFEA77003489F0 /* Day5minChart.json */; };
+		1EF37EF726BFECAE003489F0 /* StockDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF37EF626BFECAE003489F0 /* StockDetailsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +74,10 @@
 		1E044D6726BB9D160050A8B7 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		1E044D6B26BBA2410050A8B7 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		1E2DE4B726BF989B00D49572 /* StockDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewModel.swift; sourceTree = "<group>"; };
-		1E2DE4BA26BF98E100D49572 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
+		1E2DE4BA26BF98E100D49572 /* POCChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCChartType.swift; sourceTree = "<group>"; };
 		1E2DE4BC26BF99F700D49572 /* ChartDataRsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataRsDTO.swift; sourceTree = "<group>"; };
 		1E2DE4C326BF9F0D00D49572 /* JsonDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataTests.swift; sourceTree = "<group>"; };
-		1E2DE4C526BFA17C00D49572 /* DayChartData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DayChartData.json; sourceTree = "<group>"; };
+		1E2DE4C526BFA17C00D49572 /* Day1minChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Day1minChart.json; sourceTree = "<group>"; };
 		1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceDataPoint.swift; sourceTree = "<group>"; };
 		1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPriceLineChartView.swift; sourceTree = "<group>"; };
 		1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsView.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListDataServiceTests.swift; sourceTree = "<group>"; };
 		1E7DCE2326BD27F400AAF8B0 /* StockListServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListServiceError.swift; sourceTree = "<group>"; };
 		1EBD122A26BBB7D6008ED4FF /* RoundedRectangleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleImageView.swift; sourceTree = "<group>"; };
+		1EDA6CB126BFD41300EAE128 /* ChartTypeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTypeSelectorView.swift; sourceTree = "<group>"; };
 		1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEFD57826BA9B3D00DAA9D5 /* MarketDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataApp.swift; sourceTree = "<group>"; };
 		1EEFD57A26BA9B3D00DAA9D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		1EEFD59226BAA2EF00DAA9D5 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		1EEFD59426BAA2F800DAA9D5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
+		1EF37EF426BFEA77003489F0 /* Day5minChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Day5minChart.json; sourceTree = "<group>"; };
+		1EF37EF626BFECAE003489F0 /* StockDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E044D6F26BBB5D30050A8B7 /* SDWebImageSwiftUI in Frameworks */,
-				1E2DE4CB26BFA90500D49572 /* Charts in Frameworks */,
+				1EDA6CAE26BFC58400EAE128 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				1E044D5526BB97E90050A8B7 /* StockInfoData.json */,
-				1E2DE4C526BFA17C00D49572 /* DayChartData.json */,
+				1E2DE4C526BFA17C00D49572 /* Day1minChart.json */,
+				1EF37EF426BFEA77003489F0 /* Day5minChart.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				1E044D5D26BB9CD80050A8B7 /* MarketDataTests.swift */,
+				1EF37EF626BFECAE003489F0 /* StockDetailsViewModelTests.swift */,
 				1E044D5F26BB9CD80050A8B7 /* Info.plist */,
 				1E7DCE2126BD178700AAF8B0 /* StockListDataServiceTests.swift */,
 				1E2DE4C326BF9F0D00D49572 /* JsonDataTests.swift */,
@@ -178,7 +186,7 @@
 		1E2DE4B926BF98CA00D49572 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				1E2DE4BA26BF98E100D49572 /* ChartType.swift */,
+				1E2DE4BA26BF98E100D49572 /* POCChartType.swift */,
 				1E2DE4C726BFA28A00D49572 /* StockPriceDataPoint.swift */,
 			);
 			path = Utils;
@@ -200,6 +208,7 @@
 			children = (
 				1E71DB3F26BBC283005E2B27 /* StockDetailsView.swift */,
 				1E2DE4D226BFAAEC00D49572 /* StockPriceLineChartView.swift */,
+				1EDA6CB126BFD41300EAE128 /* ChartTypeSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,7 +364,7 @@
 			name = MarketData;
 			packageProductDependencies = (
 				1E044D6E26BBB5D30050A8B7 /* SDWebImageSwiftUI */,
-				1E2DE4CA26BFA90500D49572 /* Charts */,
+				1EDA6CAD26BFC58400EAE128 /* Charts */,
 			);
 			productName = MarketData;
 			productReference = 1EEFD57526BA9B3D00DAA9D5 /* MarketData.app */;
@@ -390,7 +399,7 @@
 			mainGroup = 1EEFD56C26BA9B3D00DAA9D5;
 			packageReferences = (
 				1E044D6D26BBB5D30050A8B7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				1E2DE4C926BFA90500D49572 /* XCRemoteSwiftPackageReference "Charts" */,
+				1EDA6CAC26BFC58400EAE128 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 1EEFD57626BA9B3D00DAA9D5 /* Products */;
 			projectDirPath = "";
@@ -417,7 +426,8 @@
 				1E044D5626BB97E90050A8B7 /* StockInfoData.json in Resources */,
 				1EEFD58026BA9B4200DAA9D5 /* Preview Assets.xcassets in Resources */,
 				1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */,
-				1E2DE4C626BFA17C00D49572 /* DayChartData.json in Resources */,
+				1EF37EF526BFEA77003489F0 /* Day5minChart.json in Resources */,
+				1E2DE4C626BFA17C00D49572 /* Day1minChart.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF37EF726BFECAE003489F0 /* StockDetailsViewModelTests.swift in Sources */,
 				1E7DCE2226BD178700AAF8B0 /* StockListDataServiceTests.swift in Sources */,
 				1E2DE4C426BF9F0D00D49572 /* JsonDataTests.swift in Sources */,
 				1E044D5E26BB9CD80050A8B7 /* MarketDataTests.swift in Sources */,
@@ -438,12 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E2DE4BB26BF98E100D49572 /* ChartType.swift in Sources */,
+				1E2DE4BB26BF98E100D49572 /* POCChartType.swift in Sources */,
 				1E2DE4B826BF989B00D49572 /* StockDetailsViewModel.swift in Sources */,
 				1E2DE4D326BFAAEC00D49572 /* StockPriceLineChartView.swift in Sources */,
 				1E71DB4326BBCD86005E2B27 /* MockStockListDataService.swift in Sources */,
 				1EEFD59026BAA27600DAA9D5 /* PriceInfo.swift in Sources */,
 				1E71DB4526BBDD55005E2B27 /* StockListService.swift in Sources */,
+				1EDA6CB226BFD41300EAE128 /* ChartTypeSelectorView.swift in Sources */,
 				1EEFD58A26BA9BFC00DAA9D5 /* StockRowView.swift in Sources */,
 				1E71DB4026BBC283005E2B27 /* StockDetailsView.swift in Sources */,
 				1E2DE4BD26BF99F700D49572 /* ChartDataRsDTO.swift in Sources */,
@@ -824,9 +836,9 @@
 				minimumVersion = 2.0.2;
 			};
 		};
-		1E2DE4C926BFA90500D49572 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		1EDA6CAC26BFC58400EAE128 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RedAirship/Charts.git";
+			repositoryURL = "https://github.com/RedAirship/Charts";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.1;
@@ -840,9 +852,9 @@
 			package = 1E044D6D26BBB5D30050A8B7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
 		};
-		1E2DE4CA26BFA90500D49572 /* Charts */ = {
+		1EDA6CAD26BFC58400EAE128 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E2DE4C926BFA90500D49572 /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 1EDA6CAC26BFC58400EAE128 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */

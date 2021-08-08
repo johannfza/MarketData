@@ -10,41 +10,51 @@ import Charts
 
 struct StockPriceLineChartView: UIViewRepresentable {
     
+    @ObservedObject var vm: StockDetailsViewModel
+        
     typealias UIViewType = LineChartView
-    
-    let entires: [ChartDataEntry]
     
     func makeUIView(context: Context) -> LineChartView {
         return LineChartView()
     }
     
     func updateUIView(_ uiView: LineChartView, context: Context) {
+        guard let entires = vm.chartData[vm.selectedChartType] else {
+            return
+        }
         let dataSet = LineChartDataSet(entries: entires)
         uiView.noDataText = "No Data"
-        uiView.data = LineChartData(dataSet: dataSet)
         uiView.legend.enabled = false
         uiView.setScaleEnabled(false)
         uiView.xAxis.enabled = false
         uiView.leftAxis.enabled = false
         uiView.rightAxis.enabled = false
-        print(uiView.highestVisibleX)
-        print(uiView.lowestVisibleX)
+        uiView.maxHighlightDistance = 9999999999
+        uiView.highlightPerDragEnabled = true
+        
+        
         formatDataSet(dataSet: dataSet)
+        uiView.data = LineChartData(dataSet: dataSet)
+        
     }
     
     func formatDataSet(dataSet: LineChartDataSet) {
         dataSet.drawCirclesEnabled = false
-        print(String(describing: dataSet.last))
+        dataSet.drawHorizontalHighlightIndicatorEnabled = false
+        dataSet.highlightEnabled = true
+        dataSet.highlightColor = .blue
     }
 }
 
 struct StockPriceLineChartView_Previews: PreviewProvider {
     
-    static let vm = StockDetailsViewModel()
+    static let stock = StockListViewModel(stockListService: MockStockListDataService()).stocks?[0]
     
+    static var vm = StockDetailsViewModel(stock: stock!)
+
     static var previews: some View {
-        if let entries = vm.dayChartDataEntries {
-            StockPriceLineChartView(entires: entries)
-        }
+        StockPriceLineChartView(vm: vm)
+            .frame(minWidth: 0, idealWidth: 300, maxWidth: .infinity, minHeight: 500, idealHeight: 500, maxHeight: 500, alignment: .center)
+        
     }
 }
