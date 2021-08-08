@@ -8,11 +8,12 @@
 import Foundation
 
 public enum POCChartType: String {
-    case day1min = "1D - 1 min"
-    case day5min = "1D - 5 min"
-    case week = "1W"
-    case oneMonth = "1M"
-    case threeMonths = "3M"
-    case year = "1Y"
-    case fiveYears = "5Y"
+    case day_1min = "1D - 1 min"
+    case day_5min = "1D - 5 min"
+    case week_30min = "1W - 30 min"
+    case week_1hour = "1W - 1h"
+    case month_daily = "1M - Daily"
+    case threeMonths_daily = "3M - Daily"
+    case year_daily = "1Y - Daily"
+    case fiveYears_weekly = "5Y - Weely"
 }

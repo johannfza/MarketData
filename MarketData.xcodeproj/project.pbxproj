@@ -41,6 +41,12 @@
 		1EEFD59926BAA8A300DAA9D5 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */; };
 		1EF37EF526BFEA77003489F0 /* Day5minChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EF426BFEA77003489F0 /* Day5minChart.json */; };
 		1EF37EF726BFECAE003489F0 /* StockDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF37EF626BFECAE003489F0 /* StockDetailsViewModelTests.swift */; };
+		1EF37EF926BFFD39003489F0 /* Week30minChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EF826BFFD39003489F0 /* Week30minChart.json */; };
+		1EF37EFB26BFFD8B003489F0 /* Week1hourChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EFA26BFFD8B003489F0 /* Week1hourChart.json */; };
+		1EF37EFD26BFFDDF003489F0 /* ThreeMonthsDailyChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EFC26BFFDDF003489F0 /* ThreeMonthsDailyChart.json */; };
+		1EF37EFF26BFFFB3003489F0 /* MonthDailyChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37EFE26BFFFB3003489F0 /* MonthDailyChart.json */; };
+		1EF37F0126C00042003489F0 /* YearDailyChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37F0026C00042003489F0 /* YearDailyChart.json */; };
+		1EF37F0326C0009C003489F0 /* FiveYearsDailyChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF37F0226C0009C003489F0 /* FiveYearsDailyChart.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +109,12 @@
 		1EEFD59826BAA8A300DAA9D5 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		1EF37EF426BFEA77003489F0 /* Day5minChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Day5minChart.json; sourceTree = "<group>"; };
 		1EF37EF626BFECAE003489F0 /* StockDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		1EF37EF826BFFD39003489F0 /* Week30minChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Week30minChart.json; sourceTree = "<group>"; };
+		1EF37EFA26BFFD8B003489F0 /* Week1hourChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Week1hourChart.json; sourceTree = "<group>"; };
+		1EF37EFC26BFFDDF003489F0 /* ThreeMonthsDailyChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThreeMonthsDailyChart.json; sourceTree = "<group>"; };
+		1EF37EFE26BFFFB3003489F0 /* MonthDailyChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MonthDailyChart.json; sourceTree = "<group>"; };
+		1EF37F0026C00042003489F0 /* YearDailyChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YearDailyChart.json; sourceTree = "<group>"; };
+		1EF37F0226C0009C003489F0 /* FiveYearsDailyChart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FiveYearsDailyChart.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +143,12 @@
 				1E044D5526BB97E90050A8B7 /* StockInfoData.json */,
 				1E2DE4C526BFA17C00D49572 /* Day1minChart.json */,
 				1EF37EF426BFEA77003489F0 /* Day5minChart.json */,
+				1EF37EF826BFFD39003489F0 /* Week30minChart.json */,
+				1EF37EFA26BFFD8B003489F0 /* Week1hourChart.json */,
+				1EF37EFC26BFFDDF003489F0 /* ThreeMonthsDailyChart.json */,
+				1EF37EFE26BFFFB3003489F0 /* MonthDailyChart.json */,
+				1EF37F0026C00042003489F0 /* YearDailyChart.json */,
+				1EF37F0226C0009C003489F0 /* FiveYearsDailyChart.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -423,9 +441,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF37EFD26BFFDDF003489F0 /* ThreeMonthsDailyChart.json in Resources */,
 				1E044D5626BB97E90050A8B7 /* StockInfoData.json in Resources */,
 				1EEFD58026BA9B4200DAA9D5 /* Preview Assets.xcassets in Resources */,
+				1EF37F0326C0009C003489F0 /* FiveYearsDailyChart.json in Resources */,
+				1EF37EF926BFFD39003489F0 /* Week30minChart.json in Resources */,
+				1EF37EFB26BFFD8B003489F0 /* Week1hourChart.json in Resources */,
+				1EF37EFF26BFFFB3003489F0 /* MonthDailyChart.json in Resources */,
 				1EEFD57D26BA9B4200DAA9D5 /* Assets.xcassets in Resources */,
+				1EF37F0126C00042003489F0 /* YearDailyChart.json in Resources */,
 				1EF37EF526BFEA77003489F0 /* Day5minChart.json in Resources */,
 				1E2DE4C626BFA17C00D49572 /* Day1minChart.json in Resources */,
 			);

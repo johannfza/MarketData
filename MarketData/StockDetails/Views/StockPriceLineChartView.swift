@@ -31,14 +31,13 @@ struct StockPriceLineChartView: UIViewRepresentable {
         uiView.rightAxis.enabled = false
         uiView.maxHighlightDistance = 9999999999
         uiView.highlightPerDragEnabled = true
-        
-        
         formatDataSet(dataSet: dataSet)
         uiView.data = LineChartData(dataSet: dataSet)
         
     }
     
     func formatDataSet(dataSet: LineChartDataSet) {
+        dataSet.drawValuesEnabled = false
         dataSet.drawCirclesEnabled = false
         dataSet.drawHorizontalHighlightIndicatorEnabled = false
         dataSet.highlightEnabled = true

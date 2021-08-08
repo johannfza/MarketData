@@ -13,7 +13,7 @@ struct StockDetailsView: View {
     
     public var stock: StockInfoModel
     
-    @State var selectedChartType: POCChartType = .day1min
+    @State var selectedChartType: POCChartType = .day_1min
     
     init(stock: StockInfoModel) {
         self.stock = stock
