@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ADEUMInstrumentation
 
 @main
 struct MarketDataApp: App {
